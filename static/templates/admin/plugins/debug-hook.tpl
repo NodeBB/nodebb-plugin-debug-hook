@@ -12,6 +12,7 @@
 		<button id="hookStop" class="btn btn-danger">Stop</button>
 	</div>
 </div>
+<hr/>
 <div class="row">
 	<div class="col-lg-12">
 		<pre id="hookOutput"></pre>
