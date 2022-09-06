@@ -1,17 +1,17 @@
 {
-  "name": "nodebb-plugin-quickstart",
-  "version": "0.4.2",
-  "description": "A starter kit for quickly creating NodeBB plugins",
+  "name": "nodebb-plugin-debug-hook",
+  "version": "1.0.0",
+  "description": "A plugin to show hook parameters in real time",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart"
+    "url": "https://github.com/nodebb/nodebb-plugin-debug-hook"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "quickstart",
-    "shell"
+    "debug",
+    "hook"
   ],
   "husky": {
     "hooks": {
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nodebb/nodebb-plugin-quickstart/issues"
+    "url": "https://github.com/nodebb/nodebb-plugin-debug-hook/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {
