@@ -5,13 +5,16 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-lg-3">
-		<select id="currentHook" class="form-control">
-			<option value="">Select Hook to display data</option>
+	<div class="col-lg-4">
+		<select id="availableHooks" class="form-control">
+			<option value="">Select Hook</option>
 			{{{ each hooks }}}
 			<option value="{hooks.hookName}">{hooks.hookName}</option>
 			{{{ end }}}
 		</select>
+	</div>
+	<div class="col-lg-4">
+		<input type="text" id="activeHook" class="form-control" >
 	</div>
 	<div class="col-lg-3">
 		<button id="hookStart" class="btn btn-primary {{{ if enabled }}} hidden {{{ end }}}">Start</button>

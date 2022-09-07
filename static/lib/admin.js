@@ -12,6 +12,9 @@ define('admin/plugins/debug-hook', ['alerts'], function (alerts) {
 				$('#hookStop').removeClass('hidden');
 			});
 		});
+		$('#availableHooks').on('change', function () {
+			$('#activeHook').val($(this).val());
+		});
 		$('#hookStop').on('click', function () {
 			socket.emit('admin.plugins.debugHook.stop', {}, function (err) {
 				if (err) {
@@ -23,7 +26,7 @@ define('admin/plugins/debug-hook', ['alerts'], function (alerts) {
 			});
 		});
 		socket.on('admin:hooks:filterfire', function (data) {
-			if (data.hook === $('#currentHook').val()) {
+			if (data.hook === $('#activeHook').val()) {
 				$('#hookOutput').text(
 					data.hook + ':\n' +
 					data.message + '\n\n' + $('#hookOutput').text()
